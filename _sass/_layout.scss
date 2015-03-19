@@ -46,73 +46,10 @@
     font-family: "Maven Pro",sans-serif;
     margin-top: 2vh;
     font-weight: 100;
-    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.61);
+    background: none repeat scroll 0% 0% #000;
     padding: 5px;
     font-size: 1em;
 }
-
-// .site-nav {
-//     float: right;
-//     line-height: 56px;
-
-//     .menu-icon {
-//         display: none;
-//     }
-
-//     .page-link {
-//         color: $text-color;
-//         line-height: $base-line-height;
-
-//         // Gaps between nav items, but not on the first one
-//         &:not(:first-child) {
-//             margin-left: 20px;
-//         }
-//     }
-
-//     @include media-query($on-palm) {
-//         position: absolute;
-//         top: 9px;
-//         right: 30px;
-//         background-color: $background-color;
-//         border: 1px solid $grey-color-light;
-//         border-radius: 5px;
-//         text-align: right;
-
-//         .menu-icon {
-//             display: block;
-//             float: right;
-//             width: 36px;
-//             height: 26px;
-//             line-height: 0;
-//             padding-top: 10px;
-//             text-align: center;
-
-//             > svg {
-//                 width: 18px;
-//                 height: 15px;
-
-//                 path {
-//                     fill: $grey-color-dark;
-//                 }
-//             }
-//         }
-
-//         .trigger {
-//             clear: both;
-//             display: none;
-//         }
-
-//         &:hover .trigger {
-//             display: block;
-//             padding-bottom: 5px;
-//         }
-
-//         .page-link {
-//             display: block;
-//             padding: 5px 10px;
-//         }
-//     }
-// }
 
 /**
  * Site sidebar
@@ -289,14 +226,49 @@ img.iiest-logo {
  */
 .page-content {
     padding: 0px;
-    width: 78%;
-    float: right;
+    background: none repeat scroll 0% 0% #FFF;
+    min-height: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
 }
 
-.page-heading {
+.event-content, .post-content, .main-description {
+    font-weight: lighter;
+    font-size: 1.2em;
+    color: #123559;
+    font-family: "Maven Pro",sans-serif;
+    a {
+        color: #004BFF;
+    }
+
+    b {
+        font-weight: bold;
+    }
+}
+
+.event-content {
+    h1,h2,h3,h4, h5, h6 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+}
+
+.main-description {
+    font-size: 1.8em;
+}
+
+.page-content .wrapper {
+    max-width: 80%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0 auto;
+}
+.post-title {
     font-size: 4em;
     font-family: "Maven Pro",sans-serif;
-    color: #747474;
+    font-weight: bold;
+    color: #0A1E32;
     margin-bottom: 30px;
 }
 
@@ -345,57 +317,75 @@ time {
     margin-bottom: $spacing-unit;
 }
 
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-    
-    h1 {
-        font-size: 38px;
-
-        @include media-query($on-laptop) {
-            font-size: 34px;    
-        }
-    }
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
-}
-
 #imagelightbox
 {
     position: fixed;
     z-index: 9999;
- 
     -ms-touch-action: none;
     touch-action: none;
+}
+
+.about-page-tribute {
+    font-size: 1em;
+}
+
+.event-tile-row {
+    margin-top: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.category {
+    background: #C2C2C2;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.event-tile {
+    width: 45%;
+
+    p {
+        font-weight: lighter;
+        font-size: 1.2em;
+        color: #123559;
+        font-family: "Maven Pro",sans-serif;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 1.9em;
+        color: #123559;
+        font-family: "Maven Pro",sans-serif;
+        display: inline-block;
+        margin-right: 20px;
+        line-height: 1.9em;
+    }
+
+    a {
+        color: inherit;
+        font-weight: bold;         
+    }
+
+}
+
+.event-tile-contacts{
+    display: none;
+    font-size: 1em;
+    b{
+        font-weight: bold;
+    }
+
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear-fix {
+    clear: both;
 }

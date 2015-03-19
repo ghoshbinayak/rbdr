@@ -2,24 +2,108 @@
 layout: default
 ---
 
-<div class="home">
+<div class="event-list-wrapper">
+  <h1 class="post-title">
+    Automaton 2015
+  </h1>
+  <p class="main-description">
+    After the huge success of the DIY 3.0 challenege, we are back to business. We present Automaton, the annual robotics extravaganza!
+    The events are scheduled to be held on <b>April 3,4 and 5</b> during <a href="http://www.instruo.in" >Instruo</a> at the IIEST Shibpur Campus. With <b>prizes worth Rs. 100,000</b> are to be won the events are definitely worth a look!
+  </p>
 
-  <h1 class="page-heading">/{{ site.title}}</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
-      </h2>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <p>
-        {{ post.excerpt }}
-      </p>
-      <span class='post-readmore'>
-        <a class="post-readmore" href="{{ post.url | prepend: site.url }}"> Read on..</a>
+  <div class="event-tile-row">
+      <div class="event-tile left">
+      <img src="/assets/robopolo_logo.png">
+      <a href="/events/robopolo.html">
+        <h2>Robopolo</h2>
+      </a>
+      <span class="category">
+        manual / aqua
       </span>
-    </li>
-    {% endfor %}
-  </ul>
+      <p>
+        Design a bot which can traverse on the waves of the water body sidestepping the obstacles , collect the balls and dribble them to goal.
+        <a href="/events/robopolo.html">
+          More details..
+        </a>
+      </p>
+      <p class="event-tile-contacts">
+        <b>Contacts:</b><br/>
+        Tauseef rasul: +91-9477345031<br/>
+        Anirban Sarkar: +91-8013085041<br/>
+        Ratnadeep Dey: +91-8961752968<br/>
+        Sagnik Pal Chowdhury : +91-9007004442 
+      </p>
+    </div>
+    <div class="event-tile right">
+      <img src="/assets/spirit_logo.jpg">
+      <a href="/events/spirit.html">
+        <h2>Spirit</h2>
+      </a>
+      <span class="category">
+        manual
+      </span>
+      <p>
+        <b>1)Using 2 bots :</b><br/>
+          Build 2 bots; one capable of traversing a rough terrain, carrying objects, , climbing an incline and depositing them on the raised platform . The 2nd bot needs to traverse on two tracks raised above the ground placed parallel and at a constant height. The 2nd bot needs to transport objects from the raised platform underneath and deliver them to the victims stationed at rehabs.<br/>
+
+      <b>2)Using 1 bot :</b><br/>
+        Build a bot which can traverse on rough terrains , carry the objects , climb an incline and shoot the objects into the baskets at a certain distance away. 
+        <a href="/events/spirit.html">
+          More details..
+        </a>
+      </p>
+      <p class="event-tile-contacts">
+        <b>Contacts:</b><br/>
+        Tauseef rasul: +91-9477345031<br/>
+        Anirban Sarkar: +91-8013085041<br/>
+        Ratnadeep Dey: +91-8961752968<br/>
+        Sagnik Pal Chowdhury : +91-9007004442 
+      </p>
+    </div>
+  </div>
+  <div class="event-tile-row">
+    <div class="event-tile left">
+      <img src="/assets/escapist_logo.png">
+      <a href="/events/escapist.html">
+        <h2>Escapist</h2>
+      </a>
+      <span class="category">
+        vision based
+      </span>
+      <p>
+        Make a vision guided bot to move through some goal points avoiding some moving autonomous enemy bots.
+        <a href="/events/escapist.html">
+          More details..
+        </a>
+      </p>
+      <p class="event-tile-contacts">
+        <b>Contacts:</b><br/>
+        Abhas Bhattacharya: +91-8334955881<br/>
+        Anish Dutta: +91-9007014592 <br/>
+        Souvik Baksi: +91-9614690125
+      </p>
+    </div>
+    <div class="event-tile right">
+      <img src="/assets/maze_logo.jpg">
+      <a href="/events/mazerunner.html">
+        <h2>Maze Runner</h2>        
+      </a>
+      <span class="category">
+        autonomous
+      </span>
+      <p>
+        Build an autonomous wall following robot that can follow the maze using IR proximity/ Ultrasound sensor.
+        And also communicate with the maze using IR remote control protocol(SONY) to receive directions and follow them.
+        <a href="/events/mazerunner.html">
+          More details..
+        </a>
+      </p>
+      <p class="event-tile-contacts">
+        <b>Contacts:</b><br/>
+        Annayo Sen: +91-8334988667 <br/>
+        Binayak Ghosh: +91-9434110169 
+      </p>
+    </div>
+  </div>
 </div>
+

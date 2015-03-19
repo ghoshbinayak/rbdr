@@ -1,0 +1,17 @@
+# Site settings
+title: Robodarshan
+email: ghoshbinayak@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Robodarshan, the robotics club of IIEST Shibpur.
+baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://robodarshan.iiests.ac.in" # the base hostname & protocol for your site
+url: "http://127.0.0.1:4000"
+github_username:  ghoshbinayak
+
+# Build settings
+markdown: kramdown
+safe: false
+exclude: ['README.md', 'robodarshan.sublime-project']
+paginate: 10
+permalink: /:year/:month/:day/:title/
+paginate_path: /page:num

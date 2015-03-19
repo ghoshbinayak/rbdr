@@ -1,0 +1,401 @@
+/**
+ * Site header
+ */
+.site-header {
+    // border-top: 5px solid $grey-color-dark;
+    // border-bottom: 1px solid $grey-color-light;
+    min-height: 56px;
+    // Positioning context for the mobile navigation icon
+    position: relative;
+    // max-width: 900px;
+    margin: 0 auto;
+    // margin-top: 2vh;
+    padding-top: 2vh;
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(0,0,0,0.01) 99%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(1%,rgba(0,0,0,1)), color-stop(99%,rgba(0,0,0,0.01)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 1%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 1%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 1%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 1%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.logo-wrapper img {
+    display: block;
+    margin: 0px auto;
+    width: 20vh;
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    // float: left;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
+.site-nav {
+    overflow: hidden;
+    text-align: center;
+    color: #FFF;
+    font-family: "Maven Pro",sans-serif;
+    margin-top: 2vh;
+    font-weight: 100;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.61);
+    padding: 5px;
+    font-size: 1em;
+}
+
+// .site-nav {
+//     float: right;
+//     line-height: 56px;
+
+//     .menu-icon {
+//         display: none;
+//     }
+
+//     .page-link {
+//         color: $text-color;
+//         line-height: $base-line-height;
+
+//         // Gaps between nav items, but not on the first one
+//         &:not(:first-child) {
+//             margin-left: 20px;
+//         }
+//     }
+
+//     @include media-query($on-palm) {
+//         position: absolute;
+//         top: 9px;
+//         right: 30px;
+//         background-color: $background-color;
+//         border: 1px solid $grey-color-light;
+//         border-radius: 5px;
+//         text-align: right;
+
+//         .menu-icon {
+//             display: block;
+//             float: right;
+//             width: 36px;
+//             height: 26px;
+//             line-height: 0;
+//             padding-top: 10px;
+//             text-align: center;
+
+//             > svg {
+//                 width: 18px;
+//                 height: 15px;
+
+//                 path {
+//                     fill: $grey-color-dark;
+//                 }
+//             }
+//         }
+
+//         .trigger {
+//             clear: both;
+//             display: none;
+//         }
+
+//         &:hover .trigger {
+//             display: block;
+//             padding-bottom: 5px;
+//         }
+
+//         .page-link {
+//             display: block;
+//             padding: 5px 10px;
+//         }
+//     }
+// }
+
+/**
+ * Site sidebar
+ */
+.profile-pic {
+    border-radius: 50%;
+    margin: 50px auto 0px;
+    display: block;
+    border: 3px solid #EEE;
+    width: 40%;
+}
+
+.site-sidebar {
+    position: fixed;
+    width: 22%;
+    background: none repeat scroll 0% 0% #1A1A1A;
+    height: 100vh;
+}
+
+.sidebar-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.site-sidebar p {
+    color: #B3B3B3;
+    padding: 10px;
+    text-align: center;
+    font-family: "Maven Pro",sans-serif;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.site-sidebar ul {
+    margin: 20px 0px 0px;
+    border-top: 1px solid #212121;
+}
+
+.site-sidebar ul li {
+    list-style: outside none none;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    border-bottom: 1px solid #212121;
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.site-sidebar ul li:hover {
+    background: none repeat scroll 0% 0% #000;
+}
+
+a.page-link {
+    color: white;
+    font-family: "Maven Pro",sans-serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 40px;
+}
+
+a.page-link:hover {
+    text-decoration: none;
+    color: #2A7AE2;
+}
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    padding-bottom: 0;
+    text-align: center;
+    fill: black;
+    display: inline;
+}
+
+.social-icon:hover {
+    fill: #2A7AE2;
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    padding: 30px 0px;
+    clear: both;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.80);
+    // border-top: 1px solid #E8E8E8;
+}
+
+.iiest-logo-wrapper {
+    width: 4vw;
+    margin: 0 auto;
+}
+
+img.iiest-logo {
+    width: 100%;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: 0px;
+    width: 78%;
+    float: right;
+}
+
+.page-heading {
+    font-size: 4em;
+    font-family: "Maven Pro",sans-serif;
+    color: #747474;
+    margin-bottom: 30px;
+}
+
+.post {
+    margin-top: 50px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: 40px;
+    }
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #828282;
+    display: inline-block;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+a.post-link:hover {
+    color: #2a7ae2;
+}
+
+time {
+    font-size: 0.8em;
+    color: #929292;
+}
+
+.archive-list {
+    list-style: none;
+}
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+    
+    h1 {
+        font-size: 38px;
+
+        @include media-query($on-laptop) {
+            font-size: 34px;    
+        }
+    }
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+#imagelightbox
+{
+    position: fixed;
+    z-index: 9999;
+ 
+    -ms-touch-action: none;
+    touch-action: none;
+}

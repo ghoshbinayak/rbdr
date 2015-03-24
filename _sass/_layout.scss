@@ -389,3 +389,20 @@ time {
 .clear-fix {
     clear: both;
 }
+
+$register-btn-color: #123559;
+a.registration-link {
+    background: none repeat scroll 0% 0% darken($register-btn-color, 10%);
+    display: block;
+    width: 10vw;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 40px auto 0px;
+    color: #FFF;
+}
+
+a.registration-link:hover {
+    background-color: darken( $register-btn-color, 20% );
+    text-decoration: none;
+}

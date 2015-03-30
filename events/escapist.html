@@ -14,9 +14,9 @@ layout: default
 	</p>
 	<h3>PROBLEM STATEMENT</h3>
 	<p>Make a vision guided bot to move through some goal points avoiding some moving autonomous enemy bots.<br />
-	<b>Goal points:</b> These are some green marks that your bot needs to pass through.<br />
-	<b>Guards:</b> Virtual Red Spots which moves in a straight line for some time, stops, rotates by a random angle and starts moving in another direction.<br />
-	<b>Boundary:</b> Solid Black walls and avoid hitting them.
+	<b>Goal points:</b> These are some <b>green</b> marks that your bot needs to pass through.<br />
+	<b>Guards:</b> Virtual <b>Red</b> Spots which moves in a straight line for some time, stops, rotates by a random angle and starts moving in another direction.<br />
+	<b>Arena Boundary:</b> Solid Black walls and avoid hitting them.
 	</p>
 	<h3>TASKS</h3>
 	<p>Start from a starting point, you will have to reach the goal points in any order avoiding the enemy bots.
@@ -30,12 +30,25 @@ layout: default
 	2.	2 Enemy Bot<br />
 	<b>Level 3:</b> [will be held if required]<br />
 	1.	You will have 6 Goal Point to pass through.<br />
-	2.	You have to escape 2 smart(explained in next point) Enemy bots.<br />
-	3. Upon reaching a goal point, an alert will be raised for 5 seconds. During that time the enemy bots will seek your current position and move towards you, all goal 
-	point will be closed down. After 5 seconds everything will be restored to normal.
+	2.	You have to escape 2 <b>agile</b> Enemy bots.<br />
+	<br/><br/>
+	Checkout the simulator <a href="http://goo.gl/6QkGKu"> goo.gl/6QkGKu </a>
 	</p>
+	<video src="/assets/events/escapist_demo.webm" controls style="width:100%">
+		Trial video how we are going to implement the event <a href="http://goo.gl/dDXiZS">goo.gl/dDXiZS</a>
+	</video>
 	<h3>Arena</h3>
 	<img src="/assets/events/arena3.jpg" alt="Arena"/>
+	<div></div>
+	Physical Arena Dimension: 1.2m X 1.2m<br/>
+	Virtual Arena Dimension: 500px X 500px
+
+
+	<h3>Frame Feeding Process</h3>
+	JPEG images of each processed frame will be provided to you over a network. They will be stored at some local folder in your computer wherefrom you can access them easily for your image processing and bot control.<br/><br/>
+
+	We will be providing the images at a constant rate of 10 fps (files per second), ie. to say that to get the current position of the bot you need to wait for a time period of 0.1 sec.<br/><br/>
+
 	<h3>Rules</h3>
 	<h4>Event Rules</h4>
 	<p>1. The Bot has to start 
@@ -48,6 +61,13 @@ layout: default
 	and restarts bear huge penalties.<br />
 	4. Arena Damage will lead to disqualification.<br />
 	</p>
+	
+	<h4>Bot Specifications:</h4>
+
+    1. If any wiring is used for communicating with the bot inside the arena, it should be dark in colour preferably black.<br/>
+    2.Your bot should have a flat surface on the top to let us attach a marker over it.<br/>
+    3.Your bot should not exceed the dimension of 15cm x 15cm x 15cm.<br/>
+
 	<h4>General Rules</h4>
 	<p>1. Teams need to be present during the spot registration.<br />
 	2. A maximum number of participants allowed per team: 4 people.<br />
